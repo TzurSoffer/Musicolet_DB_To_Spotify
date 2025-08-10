@@ -9,11 +9,11 @@ def decrypt(inputFile, key="JSTMUSIC_2"):
     f.close()
 
 
-    cipher = blowfish.Cipher(bytes(key, 'utf-8'))
+    cipher = blowfish.Cipher(bytes(key, "utf-8"))
 
     data_decrypted = b"".join(cipher.decrypt_ecb(ciphertext))
 
-    f = open(inputFile + '.db', "wb")
+    f = open(inputFile + ".db", "wb")
     ciphertext = f.write(data_decrypted)
     f.close()
 
