@@ -1,0 +1,7 @@
+.venv/
+.history/
+logs/
+musicoletBackups/
+Spotify Account Data/
+*.db
+*.json
